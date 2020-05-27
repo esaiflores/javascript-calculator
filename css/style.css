@@ -23,16 +23,68 @@ body {
     position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#result {
+    height: 120px;
+}
+
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    /*font-weight: bold;*/
+    font-size: 15px;
+}
+
+.number, .empty {
 
 }
 
-.btn {
-    width: 115px;
-    height: 115px;
-    font-size: 50px;
-
+.number, .operator {
+    cursor: pointer;
 }
 
-.textview {
-    width: 40%;
+.operator:active, .number:active {
+    font-size: 13px;
 }
+
+
+
+
+
+
+
+/*.btn {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    font-size: 15px;*/
+
+/*}*/
+
+/*.textview {*/
+/*    width: 40%;*/
+/*}*/
